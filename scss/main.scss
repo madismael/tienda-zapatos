@@ -1,3 +1,12 @@
-header{
-    color: red($color: #000000);
-}
+@import "utilidades/variables";
+@import "utilidades/listas";
+
+
+@import "componentes/body";
+@import "componentes/header";
+@import "pages/main-index.scss";
+@import "pages/registrarse";
+@import "pages/main-contactos";
+@import "pages/main-productos";
+@import "pages/main-conocenos";
+@import "componentes/footer";

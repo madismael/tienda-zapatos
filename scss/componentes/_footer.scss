@@ -1,0 +1,31 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    .carousel {
+        max-width: 100%;
+    }
+
+    .carousel-inner {
+        .carousel-item {
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        background-color: #0073e6;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: #fff;
+    }
+}

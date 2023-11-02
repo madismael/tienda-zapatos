@@ -1,0 +1,29 @@
+.contactos {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icono {
+        text-align: center;
+
+        img {
+            max-width: 100px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #3498db;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+    }
+}

@@ -1,5 +1,224 @@
-header {
-  color: 0;
+body {
+  background-image: url("./../../assets/imagen-de-modelos-para-fondo.webp");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header .navbar {
+  padding: 10px 0;
+}
+header .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #f0e68c;
+}
+header .navbar-brand:hover {
+  color: #ecdb70;
+  text-decoration: underline;
+  border-bottom: 2px solid #e74c3c;
+  cursor: pointer;
+}
+header .navbar-toggler-icon {
+  background-color: #f0e68c;
+  border: 2px solid #f0e68c;
+  cursor: pointer;
+}
+header .navbar-nav {
+  display: flex;
+  align-items: center;
+}
+header .navbar-nav .nav-item {
+  margin-right: 20px;
+}
+header .navbar-nav .nav-link {
+  text-decoration: none;
+  color: #000;
+}
+header .navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+header .navbar-nav .nav-link:hover {
+  color: #ecdb70;
+  text-decoration: underline;
+  border-bottom: 2px solid #e74c3c;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+main .inicio {
+  color: yellowgreen;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+main .inicio h2 {
+  font-size: 24px;
+  color: yellowgreen;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+main .inicio p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.registrarse {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.registrarse form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.registrarse form div {
+  margin: 10px 0;
+}
+.registrarse form div label {
+  display: block;
+  font-weight: bold;
+  color: #3498db;
+}
+.registrarse form div input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+}
+.registrarse form div input:focus {
+  border-color: #87ceeb;
+  outline: none;
+}
+.registrarse form input[type=submit],
+.registrarse form input[type=reset] {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactos {
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contactos .icono {
+  text-align: center;
+}
+.contactos .icono img {
+  max-width: 100px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.contactos .icono h2 {
+  font-size: 20px;
+  color: #3498db;
+  margin: 10px 0;
+}
+.contactos .icono p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-card {
+  background-color: #f0e68c;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+}
+.product-card h3 {
+  font-size: 20px;
+  color: #3498db;
+  margin: 10px 0;
+}
+.product-card p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: black;
+}
+.product-card .product-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #3498db;
+}
+
+.conocenos {
+  padding: 20px;
+  text-align: center;
+}
+.conocenos .discurso {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.conocenos .discurso h2 {
+  font-size: 24px;
+  color: #3498db;
+  margin: 10px 0;
+}
+.conocenos .discurso p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+.conocenos p {
+  font-size: 18px;
+  color: #3498db;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+footer .carousel {
+  max-width: 100%;
+}
+footer .carousel-inner .carousel-item {
+  text-align: center;
+}
+footer .carousel-inner .carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+footer .carousel-control-prev,
+footer .carousel-control-next {
+  background-color: #0073e6;
+}
+footer .carousel-control-prev-icon,
+footer .carousel-control-next-icon {
+  background-color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,25 @@
+main{
+    padding: 20px; 
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+.inicio {
+    color: nth($list: $colores, $n: 3);
+    padding: 20px;
+
+    h2 {
+        font-size: 24px;
+        color: nth($list: $colores, $n: 3);
+        text-decoration: underline;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    margin: 20px;
+    border-radius: 10px;
+}
+}
