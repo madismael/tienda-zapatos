@@ -1,9 +1,17 @@
+/*todos los imports*/
+/*utilidades*/
+/*reset*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*variables colores*/
+/*listas de colores*/
+/*mixin*/
+/*componentes*/
+/*el body de mi proyecto*/
 body {
   background-image: url("./../../assets/imagen-de-modelos-para-fondo.webp");
   background-size: cover;
@@ -14,6 +22,8 @@ body {
   padding: 0;
 }
 
+/*Realmente no se si esta bien haber hecho un archivo del body pero no se me ocurria otra manera de ponerlo*/
+/*header de mi proyecto*/
 header .navbar {
   padding: 10px 0;
 }
@@ -55,10 +65,11 @@ header .navbar-nav .nav-link:hover {
   cursor: pointer;
 }
 header .logo {
-  max-height: 75px;
+  max-height: 50px;
   margin-left: auto;
 }
 
+/*main de index*/
 main {
   padding: 20px;
   color: #fff;
@@ -82,6 +93,7 @@ main .inicio p {
   margin: 10px 0;
 }
 
+/*main de registrarse*/
 .registrarse {
   display: flex;
   flex-direction: column;
@@ -115,8 +127,8 @@ main .inicio p {
   border-color: #87ceeb;
   outline: none;
 }
-.registrarse form input[type=submit],
-.registrarse form input[type=reset] {
+.registrarse form div input[type=submit],
+.registrarse form div input[type=reset] {
   background-color: #3498db;
   color: #fff;
   padding: 10px 20px;
@@ -142,6 +154,7 @@ main .inicio p {
   font-size: 14px;
 }
 
+/*main de contactos*/
 .contactos {
   display: flex;
   flex-direction: column;
@@ -155,7 +168,7 @@ main .inicio p {
   background-color: transparent;
 }
 .contactos .icono img {
-  max-width: 50%;
+  max-width: 300px;
   height: auto;
 }
 .contactos .icono h2 {
@@ -168,13 +181,14 @@ main .inicio p {
   margin: 10px 0;
 }
 
+/*main de productos*/
 .productos {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
 }
 .productos .product-card {
-  background-color: #f0e68c;
+  background-color: #EEE4BD;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -195,13 +209,14 @@ main .inicio p {
   height: auto;
   border: 2px solid #3498db;
 }
-.productos .gradiante-btn {
+.productos .product-card .gradiante-btn {
   font-size: 20px;
   border-radius: 45px;
   padding: 10px;
   background-image: linear-gradient(to right, deepskyblue, rgba(0, 0, 255, 0.281));
 }
 
+/*main de conocenos*/
 .conocenos {
   display: flex;
   flex-direction: column;
@@ -212,7 +227,7 @@ main .inicio p {
   text-align: center;
 }
 .conocenos .discurso {
-  background-color: #fff;
+  background-color: #EEE4BD;
   padding: 20px;
   margin: 10px 0;
   border-radius: 10px;
@@ -234,6 +249,7 @@ main .inicio p {
   margin: 10px 0;
 }
 
+/*el footer de mi proyecto*/
 footer {
   background-color: #333;
   color: #fff;
@@ -254,12 +270,16 @@ footer .carousel-control-prev,
 footer .carousel-control-next {
   background-color: #0073e6;
 }
-footer .carousel-control-prev-icon,
-footer .carousel-control-next-icon {
+footer .carousel-control-prev .carousel-control-prev-icon,
+footer .carousel-control-prev .carousel-control-next-icon,
+footer .carousel-control-next .carousel-control-prev-icon,
+footer .carousel-control-next .carousel-control-next-icon {
   background-color: #fff;
 }
 
-/* 768 */
+/*media-queries*/
+/*media-queries*/
+/* mobile-768 */
 @media screen and (max-width: 768px) {
   .productos {
     display: grid;
@@ -323,7 +343,8 @@ footer .carousel-control-next-icon {
     font-size: 16px;
   }
 }
-/* 1024*/
+/*media-queries*/
+/* desktop-1024*/
 @media screen and (max-width: 1024px) {
   .productos {
     display: grid;
@@ -371,23 +392,23 @@ footer .carousel-control-next-icon {
     color: #3498db;
     margin: 10px 0;
   }
-  form {
+  .conocenos form {
     max-width: 100%;
   }
-  div {
+  .conocenos div {
     margin: 10px 0;
   }
-  label {
+  .conocenos label {
     font-size: 18px;
     font-weight: bold;
   }
-  input {
+  .conocenos input {
     font-size: 18px;
     padding: 10px;
     border-radius: 8px;
   }
-  input[type=submit],
-  input[type=reset] {
+  .conocenos input[type=submit],
+  .conocenos input[type=reset] {
     font-size: 18px;
     padding: 12px 24px;
     border-radius: 8px;

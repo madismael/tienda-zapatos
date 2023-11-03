@@ -1,3 +1,4 @@
+/*main de registrarse*/
 .registrarse {
     @include flex(column, center, flex-start);
     padding: 20px;
@@ -30,19 +31,20 @@
                     outline: none;
                 }
             }
-        }
 
-        input[type="submit"],
-        input[type="reset"] {
-            background-color: #3498db;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            margin: 10px 0;
-            cursor: pointer;
+            input[type="submit"],
+            input[type="reset"] {
+                background-color: #3498db;
+                color: #fff;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                margin: 10px 0;
+                cursor: pointer;
+            }
         }
     }
+
     .productos {
         grid-template-columns: 1fr;
     }

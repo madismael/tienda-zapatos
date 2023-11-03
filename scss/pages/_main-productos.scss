@@ -1,10 +1,11 @@
+/*main de productos*/
 .productos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
 
     .product-card {
-        background-color: #f0e68c;
+        background-color: $color-fondo;
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -12,7 +13,7 @@
 
         h3 {
             font-size: 20px;
-            color: #3498db;
+            color: $color-uno;
             margin: 10px 0;
         }
 
@@ -25,14 +26,14 @@
         .product-image {
             max-width: 100%;
             height: auto;
-            border: 2px solid #3498db;
+            border: 2px solid $color-uno;
         }
-    }
-    .gradiante-btn{
-        font-size: 20px;
-        border-radius: 45px;
-        padding: 10px;
-        background-image: linear-gradient(to right, deepskyblue, rgba(0, 0, 255, 0.281));
-        
+
+        .gradiante-btn {
+            font-size: 20px;
+            border-radius: 45px;
+            padding: 10px;
+            background-image: linear-gradient(to right, deepskyblue, rgba(0, 0, 255, 0.281));
+        }
     }
 }

@@ -1,3 +1,4 @@
+/*main de contactos*/
 .contactos {
     @include flex(column, center, flex-start);
     display: flex;
@@ -8,13 +9,14 @@
         background-color: transparent;
 
         img {
-            max-width: 50%; 
+            max-width: 300px;
             height: auto;
+            
         }
 
         h2 {
             font-size: 20px;
-            color: #3498db;
+            color: $color-uno;
             margin: 10px 0;
         }
 

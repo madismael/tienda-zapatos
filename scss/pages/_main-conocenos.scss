@@ -1,3 +1,4 @@
+/*main de conocenos*/
 .conocenos {
     @include flex(column, center, flex-start);
     display: flex;
@@ -5,7 +6,7 @@
     text-align: center;
 
     .discurso {
-        background-color: #fff;
+        background-color: $color-fondo;
         padding: 20px;
         margin: 10px 0;
         border-radius: 10px;
@@ -26,8 +27,7 @@
 
     p {
         font-size: 18px;
-        color: #3498db;
+        color: $color-uno;
         margin: 10px 0;
     }
-
 }

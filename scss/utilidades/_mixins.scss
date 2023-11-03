@@ -1,3 +1,4 @@
+/*mixin*/
 @mixin flex($flex-direction, $aling-items, $justify-content){
     display: flex;
     flex-direction: $flex-direction;

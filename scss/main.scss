@@ -1,15 +1,17 @@
+/*todos los imports*/
+/*utilidades*/
 @import "utilidades/reset";
 @import "utilidades/variables";
 @import "utilidades/listas";
 @import "utilidades/mixins";
-
+/*componentes*/
 @import "componentes/body";
 @import "componentes/header";
 @import "pages/main-index.scss";
-@import "pages/registrarse";
+@import "pages/main-registrarse";
 @import "pages/main-contactos";
 @import "pages/main-productos";
 @import "pages/main-conocenos";
 @import "componentes/footer";
-
+/*media-queries*/
 @import "utilidades/media-queries"

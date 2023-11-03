@@ -1,51 +1,55 @@
-header { 
-.navbar {
-    padding: 10px 0;
-}
-.navbar-brand {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #8ccbf0;
-
-    &:hover {
-        color: aquamarine;
-        text-decoration: underline;
-        border-bottom: 2px solid #e74c3c;
-        cursor: pointer;
+/*header de mi proyecto*/
+header {
+    .navbar {
+        padding: 10px 0;
     }
-}
-.navbar-toggler-icon {
-    background-color: #f0e68c;
-    border: 2px solid #f0e68c;
-    cursor: pointer;
-}
-.navbar-nav {
-    display: flex;
-    align-items: center;
 
-    .nav-item {
-        margin-right: 20px;
-    }
-    .nav-link {
+    .navbar-brand {
+        font-size: 24px;
+        font-weight: bold;
         text-decoration: none;
-        color: #000;
-
-        &.active {
-            font-weight: bold;
-        }
+        color: #8ccbf0;
 
         &:hover {
-            color: #ecdb70;
+            color: aquamarine;
             text-decoration: underline;
             border-bottom: 2px solid #e74c3c;
             cursor: pointer;
         }
     }
-}
-.logo {
-    max-height: 75px;
-    margin-left: auto; 
-}
 
+    .navbar-toggler-icon {
+        background-color: #f0e68c;
+        border: 2px solid #f0e68c;
+        cursor: pointer;
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+
+        .nav-item {
+            margin-right: 20px;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #000;
+
+            &.active {
+                font-weight: bold;
+            }
+
+            &:hover {
+                color: #ecdb70;
+                text-decoration: underline;
+                border-bottom: 2px solid #e74c3c;
+                cursor: pointer;
+            }
+        }
+    }
+    .logo {
+        max-height: 50px;
+        margin-left: auto;
+    }
 }
