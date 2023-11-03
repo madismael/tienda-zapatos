@@ -10,10 +10,10 @@
 /*variables colores*/
 /*listas de colores*/
 /*mixin*/
-/*componentes*/
-/*el body de mi proyecto*/
+/*body*/
+/*body de mi proyecto*/
 body {
-  background-image: url("./../../assets/imagen-de-modelos-para-fondo.webp");
+  background-image: url("../assets/imagen-fondo.png");
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
@@ -23,6 +23,7 @@ body {
 }
 
 /*Realmente no se si esta bien haber hecho un archivo del body pero no se me ocurria otra manera de ponerlo*/
+/*componentes*/
 /*header de mi proyecto*/
 header .navbar {
   padding: 10px 0;

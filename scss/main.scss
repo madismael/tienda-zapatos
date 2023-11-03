@@ -4,8 +4,9 @@
 @import "utilidades/variables";
 @import "utilidades/listas";
 @import "utilidades/mixins";
+/*body*/
+@import "body";
 /*componentes*/
-@import "componentes/body";
 @import "componentes/header";
 @import "pages/main-index.scss";
 @import "pages/main-registrarse";
