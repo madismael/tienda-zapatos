@@ -1,5 +1,4 @@
-header {
-    
+header { 
 .navbar {
     padding: 10px 0;
 }
@@ -7,10 +6,10 @@ header {
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
-    color: #f0e68c;
+    color: #8ccbf0;
 
     &:hover {
-        color: #ecdb70;
+        color: aquamarine;
         text-decoration: underline;
         border-bottom: 2px solid #e74c3c;
         cursor: pointer;

@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-image: url("./../../assets/imagen-de-modelos-para-fondo.webp");
   background-size: cover;
@@ -15,10 +21,10 @@ header .navbar-brand {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #f0e68c;
+  color: #8ccbf0;
 }
 header .navbar-brand:hover {
-  color: #ecdb70;
+  color: aquamarine;
   text-decoration: underline;
   border-bottom: 2px solid #e74c3c;
   cursor: pointer;
@@ -73,11 +79,14 @@ main .inicio p {
 }
 
 .registrarse {
-  padding: 20px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  color: yellowgreen;
 }
 .registrarse form {
   max-width: 400px;
@@ -112,22 +121,38 @@ main .inicio p {
   margin: 10px 0;
   cursor: pointer;
 }
+.registrarse .productos {
+  grid-template-columns: 1fr;
+}
+.registrarse .icono {
+  width: 100%;
+  margin: 10px 0;
+}
+.registrarse .icono img {
+  max-width: 80px;
+}
+.registrarse .icono h2 {
+  font-size: 18px;
+}
+.registrarse .icono p {
+  font-size: 14px;
+}
 
 .contactos {
-  padding: 20px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  display: flex;
+  padding: 20px;
 }
 .contactos .icono {
   text-align: center;
+  background-color: transparent;
 }
 .contactos .icono img {
-  max-width: 100px;
+  max-width: 50%;
   height: auto;
-  display: block;
-  margin: 0 auto;
 }
 .contactos .icono h2 {
   font-size: 20px;
@@ -140,46 +165,49 @@ main .inicio p {
 }
 
 .productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
 }
-
-.product-card {
+.productos .product-card {
   background-color: #f0e68c;
   padding: 20px;
-  width: calc(33.33% - 20px);
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-bottom: 20px;
 }
-.product-card h3 {
+.productos .product-card h3 {
   font-size: 20px;
   color: #3498db;
   margin: 10px 0;
 }
-.product-card p {
+.productos .product-card p {
   font-size: 16px;
   margin: 10px 0;
   color: black;
 }
-.product-card .product-image {
+.productos .product-card .product-image {
   max-width: 100%;
   height: auto;
   border: 2px solid #3498db;
 }
 
 .conocenos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
   padding: 20px;
   text-align: center;
 }
 .conocenos .discurso {
   background-color: #fff;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 10px 0;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 .conocenos .discurso h2 {
   font-size: 24px;
@@ -219,6 +247,70 @@ footer .carousel-control-next {
 footer .carousel-control-prev-icon,
 footer .carousel-control-next-icon {
   background-color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .productos .product-card {
+    grid-template-columns: 1fr;
+  }
+  .productos h3 {
+    font-size: 20px;
+  }
+  .productos p {
+    font-size: 16px;
+  }
+  .conocenos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    padding: 20px;
+    text-align: center;
+  }
+  .conocenos .discurso {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  }
+  .conocenos .discurso h2 {
+    font-size: 24px;
+    color: #3498db;
+    margin: 10px 0;
+  }
+  .conocenos .discurso p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  .conocenos p {
+    font-size: 18px;
+    color: #3498db;
+    margin: 10px 0;
+  }
+  form {
+    max-width: 100%;
+  }
+  div {
+    margin: 5px 0;
+  }
+  label {
+    font-size: 16px;
+  }
+  input {
+    font-size: 16px;
+  }
+  input[type=submit],
+  input[type=reset] {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
