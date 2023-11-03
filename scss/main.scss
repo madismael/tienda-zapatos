@@ -1,6 +1,7 @@
+@import "utilidades/reset";
 @import "utilidades/variables";
 @import "utilidades/listas";
-
+@import "utilidades/mixins";
 
 @import "componentes/body";
 @import "componentes/header";
@@ -10,3 +11,5 @@
 @import "pages/main-productos";
 @import "pages/main-conocenos";
 @import "componentes/footer";
+
+@import "utilidades/media-queries"
