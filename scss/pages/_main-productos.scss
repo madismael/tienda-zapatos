@@ -28,4 +28,11 @@
             border: 2px solid #3498db;
         }
     }
+    .gradiante-btn{
+        font-size: 20px;
+        border-radius: 45px;
+        padding: 10px;
+        background-image: linear-gradient(to right, deepskyblue, rgba(0, 0, 255, 0.281));
+        
+    }
 }

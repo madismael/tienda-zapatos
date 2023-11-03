@@ -1,3 +1,4 @@
+/* 768 */
 @media screen and (max-width: 768px) {
     .productos {
         display: grid;
@@ -67,5 +68,85 @@
     input[type="submit"],
     input[type="reset"] {
         font-size: 16px;
+    }
+}
+/* 1024*/
+@media screen and (max-width: 1024px) {
+    .productos {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        .product-card {
+            grid-template-columns: 1fr;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+
+    .conocenos {
+        @include flex(column, center, flex-start);
+        display: flex;
+        padding: 20px;
+        text-align: center;
+
+        .discurso {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 800px;
+
+            h2 {
+                font-size: 24px;
+                color: #3498db;
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 18px;
+                margin: 10px 0;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            color: #3498db;
+            margin: 10px 0;
+        }
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    div {
+        margin: 10px 0;
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    input {
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        font-size: 18px;
+        padding: 12px 24px;
+        border-radius: 8px;
     }
 }
