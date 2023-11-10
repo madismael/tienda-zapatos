@@ -103,7 +103,6 @@ main .inicio p {
   padding: 20px;
   text-align: center;
   display: flex;
-  color: yellowgreen;
 }
 .registrarse form {
   max-width: 400px;
@@ -115,7 +114,7 @@ main .inicio p {
 .registrarse form div label {
   display: block;
   font-weight: bold;
-  color: #3498db;
+  color: blue;
 }
 .registrarse form div input {
   width: 100%;
@@ -138,21 +137,19 @@ main .inicio p {
   margin: 10px 0;
   cursor: pointer;
 }
-.registrarse .productos {
-  grid-template-columns: 1fr;
-}
-.registrarse .icono {
-  width: 100%;
+.registrarse .discurso-2 h2 {
+  font-size: 24px;
+  color: #3498db;
   margin: 10px 0;
 }
-.registrarse .icono img {
-  max-width: 80px;
+.registrarse .discurso-2 p {
+  font-size: 16px;
+  margin: 10px 0;
 }
-.registrarse .icono h2 {
-  font-size: 18px;
-}
-.registrarse .icono p {
-  font-size: 14px;
+.registrarse .imagen-registrarse {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
 }
 
 /*main de contactos*/
@@ -182,39 +179,53 @@ main .inicio p {
   margin: 10px 0;
 }
 
-/*main de productos*/
 .productos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  justify-content: center;
 }
 .productos .product-card {
-  background-color: #EEE4BD;
+  background-color: #f0e68c;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
 }
-.productos .product-card h3 {
-  font-size: 20px;
-  color: #3498db;
-  margin: 10px 0;
-}
-.productos .product-card p {
-  font-size: 16px;
-  margin: 10px 0;
-  color: black;
+.productos .product-card:hover {
+  transform: scale(1.05);
 }
 .productos .product-card .product-image {
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
   border: 2px solid #3498db;
+  border-radius: 8px;
+}
+.productos .product-card h3,
+.productos .product-card p {
+  color: black;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .productos .product-card .gradiante-btn {
   font-size: 20px;
   border-radius: 45px;
   padding: 10px;
   background-image: linear-gradient(to right, deepskyblue, rgba(0, 0, 255, 0.281));
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-image 0.3s ease-in-out;
+}
+.productos .product-card .gradiante-btn:hover {
+  background-image: linear-gradient(to right, #3498db, #2980b9);
+}
+.productos .product-card:hover h3, .productos .product-card:hover p {
+  opacity: 1;
 }
 
 /*main de conocenos*/
@@ -343,6 +354,9 @@ footer .carousel-control-next .carousel-control-next-icon {
   input[type=reset] {
     font-size: 16px;
   }
+  .imagen-registrarse {
+    max-width: 70%;
+  }
 }
 /*media-queries*/
 /* desktop-1024*/
@@ -413,6 +427,9 @@ footer .carousel-control-next .carousel-control-next-icon {
     font-size: 18px;
     padding: 12px 24px;
     border-radius: 8px;
+  }
+  .imagen-registrarse {
+    max-width: 50%;
   }
 }
 

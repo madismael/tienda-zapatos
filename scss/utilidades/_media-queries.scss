@@ -72,6 +72,9 @@
     input[type="reset"] {
         font-size: 16px;
     }
+    .imagen-registrarse {
+        max-width: 70%;
+    }
 }
 /*media-queries*/
 /* desktop-1024*/
@@ -152,5 +155,8 @@
             padding: 12px 24px;
             border-radius: 8px;
         }
+    }
+    .imagen-registrarse {
+        max-width: 50%;
     }
 }
