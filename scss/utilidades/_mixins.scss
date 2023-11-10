@@ -5,3 +5,8 @@
     align-items: $aling-items;
     justify-content: $justify-content;
 }
+@mixin grid($grid-template-columns: repeat(4, 1fr), $justify-content){
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}

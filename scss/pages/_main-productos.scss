@@ -1,8 +1,9 @@
+/*main productos*/
 .productos {
+    @include grid(repeat, center);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    justify-content: center;
+
 
     .product-card {
         background-color: #f0e68c;
